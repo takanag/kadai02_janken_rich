@@ -1,0 +1,106 @@
+/* ここから下に記載していく */
+
+/*文字の色とサイズ指定 */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+h1 {
+    color: #fafafa;
+    font-size: 24px;
+}
+
+h2 {
+    color: #fafafa;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #222222;
+    font-size: 24px;
+}
+
+p {
+    color: #fafafa;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* 大きなメインビジュアル */
+.mainvisual {
+    background-image: url(/img/Title_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    padding-top: 20px;
+    font-size: 48px;
+    color: white;
+}
+
+
+/*コンテンツ */
+.background-story {
+    padding-top: 30px;
+    text-align: center;
+    height: 50px;
+    color:#fafafa;
+    font-size: 15px;
+}
+
+.story-box {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.story-image {
+    padding: 10px;
+    max-width: 900px;
+    min-width: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#story-text {
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 130px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.choice-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1em;
+    background-color: #e5c524;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.choice-button:hover {
+    background-color:#d09814;
+}
+
+
+/*フッター */
+.footer-text {
+    background-color: #707070;
+    color: #fafafa;
+    text-align: center;
+    padding: 30px;
+}
