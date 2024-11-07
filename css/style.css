@@ -30,7 +30,7 @@ p {
 
 /* 大きなメインビジュアル */
 .mainvisual {
-    background-image: url(/img/Title_background.jpg);
+    background-image: url(/img/title_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
