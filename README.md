@@ -5,7 +5,7 @@
 選択肢を選びながら冒険を進めるロールプレイングゲーム
 
 ## ③DEMO
-##デプロイしている場合はURLを記入（任意）
+https://takanag.github.io/kadai02_janken_rich.github.io/
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 なし
