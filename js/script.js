@@ -36,7 +36,7 @@ $(document).ready(function () {
 
         // 選択によるストーリーの分岐
         if (choice === "left") {
-            $("#left-image").attr('src', '/img/Gameover.jpg');
+            $("#left-image").attr('src', '/img/gameover.jpg');
             $("#story-text").text(story.a_1);
             $(".choice-button").eq(0).hide();  // 左のボタンを隠す
             $(".choice-button").eq(1).hide();  // 右のボタンを隠す
@@ -51,7 +51,7 @@ $(document).ready(function () {
             $(".choice-button").eq(0).text("「伝説のチーズ」を用いて呪いを解く").data("choice", "legend");
             $(".choice-button").eq(1).text("核を無理やり再起動する").show().data("choice", "reboot");
         } else if (choice === "tree") {
-            $("#left-image").attr('src', '/img/Gameover.jpg');
+            $("#left-image").attr('src', '/img/gameover.jpg');
             $("#story-text").text(story.b_2);
             $(".choice-button").hide();  // 選択肢を非表示にする
         } else if (choice === "legend") {
