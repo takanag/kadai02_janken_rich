@@ -1,7 +1,10 @@
+/* ここから下に記載していく */
+
 /*文字の色とサイズ指定 */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
+    overflow: hidden;  /* 画面外にキャラクターが出ないように */
 }
 
 h1 {
@@ -28,9 +31,10 @@ p {
 
 /* 大きなメインビジュアル */
 .mainvisual {
-    background-image: url(background.jpg);
+    background-image: url(/img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     width: 100%;
     height: 20vh;
@@ -94,11 +98,11 @@ p {
     background-color:#d09814;
 }
 
-
-/*フッター */
-.footer-text {
-    background-color: #707070;
-    color: #fafafa;
-    text-align: center;
-    padding: 30px;
+/* キャラクター */
+#character {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
