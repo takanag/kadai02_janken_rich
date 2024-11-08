@@ -36,30 +36,30 @@ $(document).ready(function () {
 
         // 選択によるストーリーの分岐
         if (choice === "left") {
-            $("#left-image").attr('src', 'img/gameover.jpg');
+            $("#left-image").attr('src', '/img/gameover.jpg');
             $("#story-text").text(story.a_1);
             $(".choice-button").eq(0).hide();  // 左のボタンを隠す
             $(".choice-button").eq(1).hide();  // 右のボタンを隠す
         } else if (choice === "right") {
-            $("#left-image").attr('src', 'img/story_02.jpg');
+            $("#left-image").attr('src', '/img/story_02.jpg');
             $("#story-text").text(story.b_1);
             $(".choice-button").eq(0).text("魔法でチーズの流れを止め、一時的に弱体化させる").data("choice", "stop");
             $(".choice-button").eq(1).text("山から持ち帰ったパンの木を使い、おびき寄せて封じ込める").show().data("choice", "tree");
         } else if (choice === "stop") {
-            $("#left-image").attr('src', 'img/story_03.jpg');
+            $("#left-image").attr('src', '/img/story_03.jpg');
             $("#story-text").text(story.a_2);
             $(".choice-button").eq(0).text("「伝説のチーズ」を用いて呪いを解く").data("choice", "legend");
             $(".choice-button").eq(1).text("核を無理やり再起動する").show().data("choice", "reboot");
         } else if (choice === "tree") {
-            $("#left-image").attr('src', 'img/gameover.jpg');
+            $("#left-image").attr('src', '/img/gameover.jpg');
             $("#story-text").text(story.b_2);
             $(".choice-button").hide();  // 選択肢を非表示にする
         } else if (choice === "legend") {
-            $("#left-image").attr('src', 'img/story_04.jpg');
+            $("#left-image").attr('src', '/img/story_04.jpg');
             $("#story-text").text(story.a_3);
             $(".choice-button").hide();  // 選択肢を非表示にする
         } else if (choice === "reboot") {
-            $("#left-image").attr('src', 'img/reboot.jpg');
+            $("#left-image").attr('src', '/img/reboot.jpg');
             $("#story-text").text(story.b_3);
             $(".choice-button").hide();  // 選択肢を非表示にする
     }
@@ -67,3 +67,42 @@ $(document).ready(function () {
 });
 });
 
+
+// キャラクターアニメーション
+$(document).ready(function () {
+    // キャラクターの初期位置
+    let position = { top: 200, left: 200 };
+    const speed = 100;  // 移動速度（ピクセル）
+    const boundary = { top: 0, left: 0, bottom: $(window).height(), right: $(window).width() };
+
+    // キャラクターのアニメーション関数
+    function moveCharacter() {
+        // ランダムに上下左右の移動方向を選ぶ
+        const direction = Math.floor(Math.random() * 4); // 0: 上, 1: 下, 2: 左, 3: 右
+
+        // 各方向に応じた位置の更新
+        switch (direction) {
+            case 0: // 上
+                if (position.top - speed >= boundary.top) position.top -= speed;
+                break;
+            case 1: // 下
+                if (position.top + speed <= boundary.bottom - 50) position.top += speed;
+                break;
+            case 2: // 左
+                if (position.left - speed >= boundary.left) position.left -= speed;
+                break;
+            case 3: // 右
+                if (position.left + speed <= boundary.right - 50) position.left += speed;
+                break;
+        }
+
+        // アニメーションで位置を更新
+        $('#character').animate({
+            top: position.top + 'px',
+            left: position.left + 'px'
+        }, 200);  // 200ミリ秒でアニメーション
+    }
+
+    // 一定間隔でキャラクターを動かす
+    setInterval(moveCharacter, 1000);  // 1秒ごとに動く
+});
