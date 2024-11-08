@@ -23,4 +23,3 @@ https://takanag.github.io/kadai02_janken_rich.github.io/
 
 - [参考記事]
   - 1.jQueryの「メソッド一覧」と使い方 [https://stand-4u.com/web/javascript/jquery-method.html#jQuery%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%A7%8B%E6%96%87%E3%81%AE%E3%81%8A%E3%81%95%E3%82%89%E3%81%84]
-
