@@ -71,8 +71,8 @@ $(document).ready(function () {
 // キャラクターアニメーション
 $(document).ready(function () {
     // キャラクターの初期位置
-    let position = { top: 200, left: 200 };
-    const speed = 100;  // 移動速度（ピクセル）
+    let position = { top: 200, left: 400 };
+    const speed = 30;  // 移動速度（ピクセル）
     const boundary = { top: 0, left: 0, bottom: $(window).height(), right: $(window).width() };
 
     // キャラクターのアニメーション関数
