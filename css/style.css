@@ -29,7 +29,7 @@ p {
 
 /* 大きなメインビジュアル */
 .mainvisual {
-    background-image: url(https://github.com/takanag/kadai02_janken_rich.github.io/blob/main/img/background.jpg);
+    background-image: url(/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
