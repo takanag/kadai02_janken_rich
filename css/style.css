@@ -1,5 +1,3 @@
-/* ここから下に記載していく */
-
 /*文字の色とサイズ指定 */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -31,7 +29,7 @@ p {
 
 /* 大きなメインビジュアル */
 .mainvisual {
-    background-image: url(//img/background.jpg);
+    background-image: url(/img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
